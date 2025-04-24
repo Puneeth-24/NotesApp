@@ -95,7 +95,7 @@ function App(){
 
   return (
     <div className="container" >
-      <h1>MY NOTES APP🗒️</h1>
+      <h1>QuickNote🗒️</h1>
       <input 
       value={title}
       type="text"
