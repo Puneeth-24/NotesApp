@@ -104,7 +104,7 @@ function App(){
       <textarea
         onChange={updateInputText}
         value={text}
-        placeholder="Enter you note here....."
+        placeholder="Enter your note here....."
         rows='4'
         cols='30'
       ></textarea>
