@@ -79,7 +79,9 @@ function App(){
   }
 
   function PinButton({id,pinned}){
-    return <button onClick={()=>togglePinned(id)}>{pinned?"unpin“ : “pin"}</button>
+   let pinStatus = pinned?“unpin":"pin";
+   
+    return <button onClick={()=>togglePinned(id)}>{pinStatus}</button>
   }
   function togglePinned(id){
     const updatedNotes=notes.map(note=> {
