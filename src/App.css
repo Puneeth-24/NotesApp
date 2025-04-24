@@ -1,0 +1,107 @@
+/* Body */
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+/* Main container */
+.container {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px; /* Max width for larger screens */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 0 auto; /* Center the container */
+}
+
+/* Input and Textarea styling */
+textarea,
+input[type="text"] {
+  width: 100%; /* Full width on mobile */
+  padding: 8px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+  margin-right: 8px;
+  margin-top: 5px;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%; /* Full width button for small screens */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+/* Pinned note styling */
+.pinned {
+  background-color: rgba(255, 255, 0, 0.427);
+}
+
+/* Responsive Design: For mobile devices */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px; /* Less padding on mobile */
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  textarea,
+  input[type="text"] {
+    font-size: 0.9rem; /* Slightly smaller font for mobile */
+  }
+
+  button {
+    width: 100%; /* Ensure button takes full width on mobile */
+  }
+
+  ul {
+    margin-top: 10px; /* Less space between items on mobile */
+  }
+
+  li {
+    padding: 10px; /* Less padding on smaller screens */
+  }
+
+  h3 {
+    font-size: 1.1rem; /* Slightly smaller title font */
+  }
+}
