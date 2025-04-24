@@ -78,8 +78,8 @@ function App(){
 
   }
 
-  function PinButton({id}){
-    return <button onClick={()=>togglePinned(id)}>Pin</button>
+  function PinButton({id,pinned}){
+    return <button onClick={()=>togglePinned(id)}>{pinned?"unpin“ : “pin"}</button>
   }
   function togglePinned(id){
     const updatedNotes=notes.map(note=> {
@@ -139,7 +139,7 @@ function App(){
                   <br />
                   <button onClick={()=>startEdit(note)}>Edit</button>
                   <DeleteNote noteId={note.id}/>
-                  <PinButton id={note.id} />
+                  <PinButton id={note.id}  pinned={note.pinned}/>
                   </>
                 )}</li>;
 
