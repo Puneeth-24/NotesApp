@@ -79,7 +79,7 @@ function App(){
   }
 
   function PinButton({id,pinned}){
-   let pinStatus = pinned?"unpin":"pin";
+   let pinStatus = pinned?"Unpin":"Pin";
    
     return <button onClick={()=>togglePinned(id)}>{pinStatus}</button>
   }
